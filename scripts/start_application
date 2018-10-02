@@ -13,7 +13,7 @@ HTTP_PORT_CONFIG_XSL_LOCATION="$TEMP_STAGING_DIR/configure_http_port.xsl"
 
 # In Tomcat, ROOT.war maps to the server root
 if [[ "$DEPLOY_TO_ROOT" = 'true' ]]; then
-    CONTEXT_PATH='ROOT'
+    CONTEXT_PATH='HelloApp-0.0.1-SNAPSHOT'
 fi
 
 # Remove unpacked application artifacts
