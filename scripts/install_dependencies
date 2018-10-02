@@ -6,7 +6,7 @@ CATALINA_HOME=/usr/share/tomcat8
 TOMCAT_VERSION=8.5.32
 
 # Tar file name
-TOMCAT8_CORE_TAR_FILENAME="apache-tomcat-$TOMCAT_VERSION.tar.gz"
+TOMCAT8_CORE_TAR_FILENAME="apache-tomcat-$TOMCAT_VERSION-deployer.tar.gz"
 # Download URL for Tomcat8 core
 TOMCAT8_CORE_DOWNLOAD_URL="http://mirror.olnevhost.net/pub/apache/tomcat/tomcat-8/v$TOMCAT_VERSION/bin/$TOMCAT8_CORE_TAR_FILENAME"
 # The top-level directory after unpacking the tar file
