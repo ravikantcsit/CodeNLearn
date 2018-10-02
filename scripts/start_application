@@ -26,10 +26,11 @@ fi
 
 # Copy the WAR file to the webapps directory
 cp $WAR_STAGED_LOCATION $CATALINA_HOME/webapps/$CONTEXT_PATH.war
-
+#need to point at different location
+CATALINA_HOME='/etc/tomcat8'
 # Configure the Tomcat server HTTP connector
 { which xsltproc; } || { yum install xsltproc; } || { apt-get install xsltproc; }
-cp $CATALINA_HOME/conf/server.xml $CATALINA_HOME/conf/server.xml.bak
-xsltproc $HTTP_PORT_CONFIG_XSL_LOCATION $CATALINA_HOME/conf/server.xml.bak > $CATALINA_HOME/conf/server.xml
+cp $CATALINA_HOME/server.xml $CATALINA_HOME/server.xml.bak
+xsltproc $HTTP_PORT_CONFIG_XSL_LOCATION $CATALINA_HOME/server.xml.bak > $CATALINA_HOME/server.xml
 
 service tomcat8 start
