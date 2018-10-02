@@ -8,12 +8,12 @@ DEPLOY_TO_ROOT='true'
 SERVER_HTTP_PORT='80'
 
 TEMP_STAGING_DIR='/tmp/codedeploy-deployment-staging-area'
-WAR_STAGED_LOCATION="$TEMP_STAGING_DIR/MyAppBuild.war"
+WAR_STAGED_LOCATION="$TEMP_STAGING_DIR/HelloApp-0.0.1-SNAPSHOT.war"
 HTTP_PORT_CONFIG_XSL_LOCATION="$TEMP_STAGING_DIR/configure_http_port.xsl"
 
 # In Tomcat, ROOT.war maps to the server root
 if [[ "$DEPLOY_TO_ROOT" = 'true' ]]; then
-    CONTEXT_PATH='MyAppBuild'
+    CONTEXT_PATH='HelloApp-0.0.1-SNAPSHOT'
 fi
 
 # Remove unpacked application artifacts
