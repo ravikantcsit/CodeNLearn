@@ -3,14 +3,14 @@
 set -e
 
 CATALINA_HOME='/usr/share/tomcat8'
-DEPLOY_TO_ROOT='true'
+DEPLOY_TO_ROOT='false'
 #CONTEXT_PATH='##CONTEXT_PATH##'
 SERVER_HTTP_PORT='80'
 
 TEMP_STAGING_DIR='/tmp/codedeploy-deployment-staging-area'
 WAR_STAGED_LOCATION="$TEMP_STAGING_DIR/HelloApp-0.0.1-SNAPSHOT.war"
 HTTP_PORT_CONFIG_XSL_LOCATION="$TEMP_STAGING_DIR/configure_http_port.xsl"
-
+CONTEXT_PATH='HelloApp'
 # In Tomcat, ROOT.war maps to the server root
 if [[ "$DEPLOY_TO_ROOT" = 'true' ]]; then
     CONTEXT_PATH='ROOT'
