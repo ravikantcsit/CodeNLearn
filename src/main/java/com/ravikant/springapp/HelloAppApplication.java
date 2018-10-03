@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class HelloAppApplication extends SpringBootServletInitializer {
 	
-	@Value("${spring.application.name:HelloAppApplication}")
+	@Value("${spring.application.name:Ravikant}")
 	   private String name;
 
 	public static void main(String[] args) {
