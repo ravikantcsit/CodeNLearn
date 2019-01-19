@@ -26,7 +26,7 @@ public class HelloAppApplication extends SpringBootServletInitializer {
 	
 	@RequestMapping(value="/")
 	public String hello() {
-		return "Hello Innodeed by "+name+" in server";
+		return "Hello Innodeed by "+name+" in demo";
 		
 	}
 }
